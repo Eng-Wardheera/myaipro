@@ -12,6 +12,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///advanced_chat.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+client = os.getenv("GROQ_API_KEY")
+
 # 1. Model-ka Sheekooyinka (Sessions)
 class ChatSession(db.Model):
     id = db.Column(db.Integer, primary_key=True)

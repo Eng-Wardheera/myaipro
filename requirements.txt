@@ -1,0 +1,5 @@
+Flask
+Flask-SQLAlchemy
+markdown
+PyPDF2
+docx2txt
